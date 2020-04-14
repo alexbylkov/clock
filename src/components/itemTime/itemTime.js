@@ -1,15 +1,14 @@
 import React from 'react'
-import LogicClock from '../../containers/logicClock/logicClock'
-import Region from '../../containers/region/region'
-import s from './itemTime.module.sass'
+import LogicClock from '../../containers/logicClock'
+import LogicRegion from '../../containers/logicRegion'
 import id from 'short-id'
 
 const ItemTime = () => {
     const clockId = id.generate()
     return (
-    <div className={s.item} >
+    <div className="item" >
         <LogicClock clockId={clockId} />
-        <Region regionId={clockId} />
+        <LogicRegion regionId={clockId} />
     </div>
 )}
 

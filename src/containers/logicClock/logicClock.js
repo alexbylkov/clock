@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import Clock from '../../components/clock/clock'
+import Clock from '../../components/clock'
 import {connect} from 'react-redux'
 
 const LogicClock = ({clockId, itemClock}) => {
@@ -37,10 +37,10 @@ const LogicClock = ({clockId, itemClock}) => {
     return <Clock timeText={nowClock.timeText} timeDeg={timeDeg}/>
 }
 
-const mapStateToProps = (state) => {
-  return {
-    itemClock: state.itemClock
-  }
+const mapStateToProps = ({itemClock}) => {
+	return {
+		itemClock
+	}
 }
 
 export default connect(mapStateToProps)(LogicClock)

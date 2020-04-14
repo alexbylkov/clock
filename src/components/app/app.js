@@ -1,12 +1,12 @@
 import React from 'react'
-import ItemTime from '../itemTime/itemTime'
-import s from './app.module.sass'
+import ItemTime from '../itemTime'
+import './app.sass'
 
 const App = () => (
-  <div className={s.app}>
-    <ItemTime />
-    <ItemTime />
-  </div>
+	<div className="app">
+		<ItemTime />
+		<ItemTime />
+	</div>
 )
 
 

@@ -1,6 +1,6 @@
 import {REGION} from './actionTypes'
 
-export const regionZone = (itemClock) => {
+export const regionZone = itemClock => {
     return {
         type: REGION,
         itemClock
